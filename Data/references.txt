@@ -1,3 +1,0 @@
-HateXplain - https://github.com/hate-alert/HateXplain
-civil_comments - https://www.tensorflow.org/datasets/catalog/civil_comments#civil_commentscivilcomments_default_config
-hate and offensive davidson - https://github.com/t-davidson/hate-speech-and-offensive-language/tree/master
