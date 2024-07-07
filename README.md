@@ -23,6 +23,22 @@ The research component consisted of using classical machine learning algorithms,
 ### Classical Machine Learning
 To ascertain the best type of machine algorithm to utilise in production, a light dataset was used to train various learning models such as multilayer perceptron neural network, gradient booster classifier and support vector machine. The research was focused mainly on assessing the accuracy and f1 score of the models, however all models yielded unsatisfactory results with scores averaging around 50% across all models. It hence became evident that a more sophisticated algorithm, such as deep learning, was necessitated to attain the desired quality of results.
 
+<left>
+    <div>
+    <img src="https://www.researchgate.net/profile/Mohammed-Farhan-Baluch/publication/358218876/figure/fig7/AS:1184859200471042@1659503855657/MLP-classifier-neural-network-structure.png" width="200" height="100"/>
+    </div>
+</left>
+<center>
+    <div>
+    <img src="https://www.researchgate.net/publication/351542039/figure/fig1/AS:11431281172877200@1688685833363/Flow-diagram-of-gradient-boosting-machine-learning-method-The-ensemble-classifiers.png" width="200" height="100"/>
+    </div>
+</center>
+<right>
+    <div>
+    <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="200" height="100"/>
+    </div>
+</right>
+
 ### Deep Learning
 To implement the deep learning algorithm, a BERT model was selected because of it being a bidirectional model, which tends to capture more of the text’s context and meaning. Initial tests on light datasets showed results of 65-70%, so we concluded that a heavy dataset would be capable of producing results up to 90%, however our personal machines lacked sufficient computing power to support the training of such a model on a large number of dataset entries such as ours. Despite this, we are confident that training with a larger dataset, would allow the algorithm to more accurately differentiate between various classifications of comments, and recognise linguistic elements such as sarcasm, slang, and cultural references.
 
