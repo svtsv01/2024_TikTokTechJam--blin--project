@@ -1,4 +1,4 @@
-# NOTE: larger files, including datasets, are housed on [Google Drive](https://drive.google.com/drive/folders/14nzDT1nva1aNvQ5VoHZnZd-YZccn8ymx?usp=sharing)
+# NOTE: larger files, including datasets and model weights, are housed on [Google Drive](https://drive.google.com/drive/folders/14nzDT1nva1aNvQ5VoHZnZd-YZccn8ymx?usp=sharing)
 
 # 2024_TikTokTechJam--blin--project
 This a repository housing the solution for 2024 Tik-Tok Tech Jam, on "Preventing hate speech". Teamname &lt;blin>
