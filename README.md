@@ -38,15 +38,23 @@ The research component consisted of using classical machine learning algorithms,
 ### Classical Machine Learning
 To ascertain the best type of machine algorithm to utilise in production, a light dataset was used to train various learning models such as multilayer perceptron neural network, gradient booster classifier and support vector machine. The research was focused mainly on assessing the accuracy and f1 score of the models, however all models yielded unsatisfactory results with scores averaging around 50% across all models. It hence became evident that a more sophisticated algorithm, such as deep learning, was necessitated to attain the desired quality of results.
 
-<center>
+<center align="center" >
     <div align="center" display = "flex", gap = 20px>
-     <figure> </figure>
-    <img src="site/public/images/MLP.png" width="480" height="370"/>
-    <img src="site/public/images/Tree.png" width="480" height="370"/>
-    </div>
+     <img src="site/public/images/MLP.png" width="480" height="370"/>
+     <p align="center"> Multi-Layer Perceptron  - accuracy: 48%</br>
+    picture taken from  <a href="https://www.researchgate.net/figure/MLP-classifier-neural-network-structure_fig7_358218876"> here </a></p>
+     <img src="site/public/images/Tree.png" width="480" height="370"/>
+     <p align="center"> Gradient Booster Classifier  - accuracy: 51%</br>
+    picture taken from  <a href="https://www.researchgate.net/figure/Flow-diagram-of-gradient-boosting-machine-learning-method-The-ensemble-classifiers_fig1_351542039"> here </a></p>
+</div>
 </center>
+
 <div  align="center" > 
 <img src="site/public/images/SVL.png" width="480" height="370"/>
+ <p align="center">
+ Support vector machine - accuracy: 49%<br>
+ picture taken from <a href="https://en.wikipedia.org/wiki/Support_vector_machine">here</a>
+  </p>  
 </div>
 
 ### Deep Learning
