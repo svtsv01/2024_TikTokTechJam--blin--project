@@ -73,8 +73,8 @@ Initial tests on light datasets showed results of 65-70%, so we concluded that a
 We have also developed a web-site using basic web development stack, such as Node.js, Express.js and EJS, which would be used to upload video files or comments to make prediction whether or not they contain hatespeech. You can access the website [here](), or by scanning the QR code:
 
 <center>
-    <div>
-    <img src="site/public/images/Comp.png" width="200" height="100"/>
+    <div style = "justify-content: center; display: flex;  gap: 20px;">
+    <img src="site/public/images/Comp.png"  width: 45%; height: auto;/>
     </div>
 </center>
 
