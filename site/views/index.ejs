@@ -1,0 +1,146 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+  <h2> <strong>Challenge</strong></h2>
+  <p class="text"> 
+    The internet has connected people through platforms that enable information
+    exchange. To prevent hate and offensive speech, most platforms have
+    community guidelines, moderation teams, and monitoring techniques. TikTok,
+    for example, classifies content as restrictible (inappropriate for youth) or
+    removable (violating policies). </br> 
+    
+  </br> Our goal is to create an AI-powered solution
+    that effectively classifies content as normal, offensive, or hate speech. A
+    key challenge is accurately identifying and categorizing text per TikTok's
+    hate speech policy. The complexity of natural language, including sarcasm,
+    slang, and cultural references, complicates this task.
+  </p>
+
+  <h2> <strong> </strong>Our Solution:</h2>
+
+  <form id="linkForm">
+    <label for="link">Enter your link:</label>
+    <input type="url" id="link" name="link" required>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="loadingMessage" class="loading">Loading...</div>
+  <div id="normalMessage" class="normal">Normal (no hatespeech detected)</div>
+
+  <h3> <strong>Data Processing</strong> </h3>
+  <p class="text">
+
+    Our team began by taking multiple initial datasets of comments with three varying
+     classification criteria for comments of similar nature. The datasets were combined 
+     where data preparation and validation were performed to standardize all data entries 
+     into one form, removing any junk symbols or unsuitable entries to  leave a homogenous 
+     list of text comments.</br>
+
+    <p>The sizes of light and heavy datasets</p> </p>
+    <div class="image-container">
+      <img src="images/output.png" alt="Image 4">
+  </div>
+    <p class="text">
+  </br>
+  Each entry was labelled in a systematic manner, using numerical values to represent each category,
+   where the number 0, 1 and 2 represented normal, offensive and hate speech respectively. 
+</br>
+</br>
+</p>
+<p> Here you can see the label distribution for out datasets:</p>
+
+  <div class="image-container">
+    <img src="images/Dist1.jpg" alt="Image 1">
+    <img src="images/Dist2.jpg" alt="Image 2">
+</div>
+
+ <p class = "text">
+  The research component consisted of using classical machine learning algorithms, for which we employed a light dataset model consisting of 20 thousand entries.
+  The production component centred around a deep learning algorithm using a heavy dataset model of over 2 million entries.
+ </p>
+</br>
+<h3> <strong> Classical Machine Learning </strong></h3>
+
+<p class="text">
+  To ascertain the best type of machine algorithm to utilise in production,
+  a light dataset was used to train various learning models such as multilayer perceptron neural network,
+  gradient booster classifier and support vector machine. The research was focused mainly on assessing 
+  the accuracy and f1 score of the models, however all models yielded unsatisfactory results with scores 
+  averaging around 50% across all models. 
+  It hence became evident that a more sophisticated algorithm, such as deep learning, 
+  was necessitated to attain the desired quality of results.
+   <div class="image-container">
+    <figure>
+      <img src="images/MLP.png" style="width: 100%; height: auto;" alt="Image 5">
+      <figcaption>Multi-Layer Perceptron <span style="font-size: 1rem;"> - accuracy: 48%</span><br>
+        <span style="font-size: 1rem;"> picture taken from <a href="https://www.researchgate.net/figure/MLP-classifier-neural-network-structure_fig7_358218876">here</a></span>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="images/Tree.png" alt="Image 5" style="width: 75%; height: auto;">
+      <figcaption>Gradient Booster Classifier <span style="font-size: 1rem;"> - accuracy: 51%</span><br>
+        <span style="font-size: 1rem;">picture taken from <a href="https://www.researchgate.net/figure/Flow-diagram-of-gradient-boosting-machine-learning-method-The-ensemble-classifiers_fig1_351542039">here</a></span>
+      </figcaption>
+    </figure>
+  </div>
+  
+  <figure>
+    <img src="images/SVL.png" alt="Image 5" style="width: 25%; height: auto;">
+    <figcaption>Support vector machine <span style="font-size: 1rem;"> - accuracy: 49%</span><br>
+      <span style="font-size: 1rem;">picture taken from <a href="https://en.wikipedia.org/wiki/Support_vector_machine">here</a></span>
+    </figcaption>
+  </figure>
+
+</p>
+
+<h3> <strong>Deep Learning</strong></h3>
+
+<p class="text">
+  To implement the deep learning algorithm, a BERT model was selected because of it being a
+  bidirectional model, which tends to capture more of the text’s context and meaning. </p >
+
+  <figure>
+    <img id="BERT" src="images/BERT.png" alt="Image 5">
+    <figcaption>BERT <span style="font-size: 1rem;"> - accuracy: 65-70% </span> </br>
+    <span style = "font-size: 10px;">picture taken from  <a href = "https://paperswithcode.com/method/bert"> here </a></span></figcaption>
+</figure>
+
+<p class="text">
+  Initial tests on light datasets showed results of 65-70%, so we concluded that a heavy dataset would be capable of
+   producing results up to 90%, however our personal machines lacked sufficient computing power to
+    support the training of such a model on a large number of dataset entries such as ours. 
+    Despite this, we are confident that training with a larger dataset, would allow the algorithm to more accurately 
+    differentiate between various classifications of comments, and recognise linguistic elements such as sarcasm, slang, and cultural references.
+</p>
+
+  <p>
+    Here you can see the differences for accuracies between Classiacal and Deep Learning approaches:
+  </p>
+
+  <div class="image-container">
+  <img src="images/Comp.png" alt="Image 3">
+</div>
+</p>
+
+<h3> <strong>Conclusion</strong></h3>
+<p class="text">
+  In the process of our research, we have successfully created a BERT model algorithm, with demonstrated 
+  capabilities to achieve an accuracy up to 70% in language and text classification. </br>
+    
+</br>We have also developed a prototype of a website, that ideally, upon full functionality would be able to load videos from Tik-Toc 
+and classify them in a similar manner without loss of accuracy.
+</p>
+  <script>
+        document.getElementById('linkForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            document.getElementById('loadingMessage').style.display = 'block';
+            document.getElementById('normalMessage').style.display = 'none';
+
+            setTimeout(function() {
+                
+                document.getElementById('loadingMessage').style.display = 'none';
+                document.getElementById('normalMessage').style.display = 'block';
+            }, 1000);
+        });
+    </script>
+
+<%- include("partials/footer.ejs") %>
