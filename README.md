@@ -19,23 +19,19 @@ Our goal is to create an AI-powered solution
 Our team began by taking multiple initial datasets of comments with three varying classification criteria for comments of similar nature. The datasets were combined where data preparation and validation were performed to standardize all data entries into one form, removing any junk symbols or unsuitable entries to  leave a homogenous list of text comments.
 
 <center>
-    <div>
-    <img src="site/public/images/output.png" width="200" height="100"/>
+    <div align="center">
+    <img src="site/public/images/output.png"  width: 45%; height: auto;/>
     </div>
 </center>
 
 Each entry was labelled in a systematic manner, using numerical values to represent each category, where the number 0, 1 and 2 represented normal, offensive and hate speech respectively. 
 
-<left>
-    <div>
-    <img src="site/public/images/Dist1.jpg" width="200" height="100"/>
+<center>
+    <div display = "flex">
+    <img src="site/public/images/Dist1.jpg"  width: 25%; height: auto;/>
+    <img src="site/public/images/Dist2.jpg"  width: 25%; height: auto;/>
     </div>
-</left>
-<right>
-    <div>
-    <img src="site/public/images/Dist2.jpg" width="200" height="100"/>
-    </div>
-</right>
+</center>
 
 The research component consisted of using classical machine learning algorithms, for which we employed a light dataset model consisting of 20 thousand entries. The production component centred around a deep learning algorithm using a heavy dataset model of over 2 million entries.
 
@@ -62,8 +58,8 @@ To ascertain the best type of machine algorithm to utilise in production, a ligh
 To implement the deep learning algorithm, a BERT model was selected because of it being a bidirectional model, which tends to capture more of the text’s context and meaning. 
 
 <p align="center">
-    <div>
-    <img src="site/public/images/BERT.png" width="200" height="100"/>
+    <div align="center">
+    <img src="site/public/images/BERT.png" width: 90%; height: auto;/>
     </div>
 </p>
 
