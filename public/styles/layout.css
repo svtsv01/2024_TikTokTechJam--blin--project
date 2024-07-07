@@ -140,3 +140,81 @@ p {
   color: black;
   text-align: justify;
 }
+
+.loading {
+  display: none;
+}
+.normal {
+  display: none;
+}
+
+#normalMessage {
+  color: green;
+  margin-bottom: 28px;
+}
+
+#normalMessage {
+  margin-bottom: 28px;
+}
+button {
+  background: #76232f;
+  border: 1px solid #76232f;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  outline: 0;
+  padding: 4px 4px;
+  text-align: center;
+}
+
+button:hover,
+button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #76232f;
+}
+
+label[for="link"] {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: regular;
+}
+
+input {
+  width: 300px;
+  padding: 1px;
+  font-size: 12px;
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 3px 0 #000;
+  outline: none;
+  transition: ease 0.25s;
+  margin-bottom: 28px;
+}
+
+.image-container {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+
+.image-container img {
+  width: 45%;
+  height: auto;
+}
+
+.note {
+  align-items: center;
+}
+
+#BERT {
+  width: 100%;
+  height: auto;
+}
