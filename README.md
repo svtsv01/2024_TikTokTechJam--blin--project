@@ -20,16 +20,16 @@ Our team began by taking multiple initial datasets of comments with three varyin
 
 <center>
     <div align="center">
-    <img src="site/public/images/output.png"  width: 45%; height: auto;/>
+    <img src="site/public/images/output.png"  width="500" height="370"/>
     </div>
 </center>
 
 Each entry was labelled in a systematic manner, using numerical values to represent each category, where the number 0, 1 and 2 represented normal, offensive and hate speech respectively. 
 
 <center>
-    <div display = "flex">
-    <img src="site/public/images/Dist1.jpg"  width: 25%; height: auto;/>
-    <img src="site/public/images/Dist2.jpg"  width: 25%; height: auto;/>
+    <div display = "flex", gap = 20px>
+    <img src="site/public/images/Dist1.jpg"  width="480" height="370"/>
+    <img src="site/public/images/Dist2.jpg"  width="480" height="370"/>
     </div>
 </center>
 
