@@ -38,26 +38,20 @@ The research component consisted of using classical machine learning algorithms,
 ### Classical Machine Learning
 To ascertain the best type of machine algorithm to utilise in production, a light dataset was used to train various learning models such as multilayer perceptron neural network, gradient booster classifier and support vector machine. The research was focused mainly on assessing the accuracy and f1 score of the models, however all models yielded unsatisfactory results with scores averaging around 50% across all models. It hence became evident that a more sophisticated algorithm, such as deep learning, was necessitated to attain the desired quality of results.
 
-<left>
-    <div>
-    <img src="site/public/images/MLP.png" width="200" height="100"/>
-    </div>
-</left>
 <center>
-    <div>
-    <img src="site/public/images/Tree.png" width="200" height="100"/>
+    <div  display = "flex", gap = 20px>
+    <img src="site/public/images/MLP.png" width="480" height="370"/>
+    <img src="site/public/images/Tree.png" width="480" height="370"/>
     </div>
 </center>
-<right>
-    <div>
-    <img src="site/public/images/SVL.png" width="200" height="100"/>
-    </div>
-</right>
+<div  align="center" > 
+<img src="site/public/images/SVL.png" width="480" height="370"/>
+</div>
 
 ### Deep Learning
 To implement the deep learning algorithm, a BERT model was selected because of it being a bidirectional model, which tends to capture more of the text’s context and meaning. 
 
-<p align="center">
+<p align="center" >
     <div align="center">
     <img src="site/public/images/BERT.png" width: 90%; height: auto;/>
     </div>
