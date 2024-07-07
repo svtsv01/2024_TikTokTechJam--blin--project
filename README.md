@@ -1,6 +1,5 @@
 # 2024_TikTokTechJam--blin--project
-This a repository housing the solution for 2024 Tik-Tok Tech Jam, on "Preventing hate speech". Teamname "<blin>"
-
+This a repository housing the solution for 2024 Tik-Tok Tech Jam, on "Preventing hate speech". Teamname &lt;blin>
 ### Challenge 
 
  The internet has connected people through platforms that enable information
