@@ -61,11 +61,11 @@ To ascertain the best type of machine algorithm to utilise in production, a ligh
 ### Deep Learning
 To implement the deep learning algorithm, a BERT model was selected because of it being a bidirectional model, which tends to capture more of the text’s context and meaning. 
 
-<center>
+<p align="center">
     <div>
     <img src="site/public/images/BERT.png" width="200" height="100"/>
     </div>
-</center>
+</p>
 
 Initial tests on light datasets showed results of 65-70%, so we concluded that a heavy dataset would be capable of producing results up to 90%, however our personal machines lacked sufficient computing power to support the training of such a model on a large number of dataset entries such as ours. Despite this, we are confident that training with a larger dataset, would allow the algorithm to more accurately differentiate between various classifications of comments, and recognise linguistic elements such as sarcasm, slang, and cultural references.
 
@@ -73,7 +73,7 @@ Initial tests on light datasets showed results of 65-70%, so we concluded that a
 We have also developed a web-site using basic web development stack, such as Node.js, Express.js and EJS, which would be used to upload video files or comments to make prediction whether or not they contain hatespeech. You can access the website [here](), or by scanning the QR code:
 
 <center>
-    <div style = "justify-content: center; display: flex;  gap: 20px;">
+    <div align="center">
     <img src="site/public/images/Comp.png"  width: 45%; height: auto;/>
     </div>
 </center>
