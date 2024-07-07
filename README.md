@@ -66,11 +66,11 @@ Initial tests on light datasets showed results of 65-70%, so we concluded that a
 </center>
 
 ### Website
-We have also developed a web-site using basic web development stack, such as Node.js, Express.js and EJS, which would be used to upload video files or comments to make prediction whether or not they contain hatespeech. You can access the website [here](), or by scanning the QR code:
+We have also developed a web-site using basic web development stack, such as Node.js, Express.js and EJS, which would be used to upload video files or comments to make prediction whether or not they contain hatespeech. You can access the website [here](https://svtsv01.github.io/2024_TikTokTechJam--blin--website/), or by scanning the QR code:
 
 <center>
     <div align="center">
-    <img src="site/public/images/Comp.png"  width: 45%; height: auto;/>
+    <img src="site/public/images/QR-code.jpg"  width: 45%; height: auto;/>
     </div>
 </center>
 
