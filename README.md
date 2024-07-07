@@ -86,7 +86,7 @@ We have also developed a web-site using basic web development stack, such as Nod
 </center>
 
 ### Conclusion
-In the process of our research, we have successfully created a BERT model algorithm, with demonstrated capabilities to achieve an accuracy up to 70% in language and text classification. We have also developed a prototype of a website, that ideally, upon full functionality would be able to load videos from Tik-Toc and classify them in a similar manner without loss of accuracy.
+In the process of our research, we have successfully created a BERT model algorithm, with demonstrated capabilities to achieve an accuracy up to 70% in language and text classification. We have also developed a prototype of a website, that ideally, upon full functionality would be able to load videos from Tik-Tok and classify them in a similar manner without loss of accuracy.
 
 ### References
 ~~~bibtex
