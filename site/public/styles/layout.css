@@ -108,7 +108,7 @@ footer .social_icon li a:hover {
 
 footer .menu li a {
   font-size: 1.2em;
-  color: #ccc;
+  color: blueviolet;
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
@@ -217,3 +217,4 @@ input {
   width: 90%;
   height: auto;
 }
+
