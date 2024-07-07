@@ -39,7 +39,7 @@ The research component consisted of using classical machine learning algorithms,
 To ascertain the best type of machine algorithm to utilise in production, a light dataset was used to train various learning models such as multilayer perceptron neural network, gradient booster classifier and support vector machine. The research was focused mainly on assessing the accuracy and f1 score of the models, however all models yielded unsatisfactory results with scores averaging around 50% across all models. It hence became evident that a more sophisticated algorithm, such as deep learning, was necessitated to attain the desired quality of results.
 
 <center>
-    <div  display = "flex", gap = 20px>
+    <div align="center" display = "flex", gap = 20px>
     <img src="site/public/images/MLP.png" width="480" height="370"/>
     <img src="site/public/images/Tree.png" width="480" height="370"/>
     </div>
@@ -58,6 +58,12 @@ To implement the deep learning algorithm, a BERT model was selected because of i
 </p>
 
 Initial tests on light datasets showed results of 65-70%, so we concluded that a heavy dataset would be capable of producing results up to 90%, however our personal machines lacked sufficient computing power to support the training of such a model on a large number of dataset entries such as ours. Despite this, we are confident that training with a larger dataset, would allow the algorithm to more accurately differentiate between various classifications of comments, and recognise linguistic elements such as sarcasm, slang, and cultural references.
+
+<center>
+    <div align="center">
+    <img src="site/public/images/Comp.png"  width: 45%; height: auto;/>
+    </div>
+</center>
 
 ### Website
 We have also developed a web-site using basic web development stack, such as Node.js, Express.js and EJS, which would be used to upload video files or comments to make prediction whether or not they contain hatespeech. You can access the website [here](), or by scanning the QR code:
