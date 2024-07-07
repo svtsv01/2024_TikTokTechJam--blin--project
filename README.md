@@ -40,6 +40,7 @@ To ascertain the best type of machine algorithm to utilise in production, a ligh
 
 <center>
     <div align="center" display = "flex", gap = 20px>
+     <figure> </figure>
     <img src="site/public/images/MLP.png" width="480" height="370"/>
     <img src="site/public/images/Tree.png" width="480" height="370"/>
     </div>
@@ -54,9 +55,11 @@ To implement the deep learning algorithm, a BERT model was selected because of i
 <p align="center" >
     <div align="center">
     <img src="site/public/images/BERT.png" width: 90%; height: auto;/>
+     <p align="center">BERT - accuracy: 65-70% </br>
+    picture taken from  <a href = "https://paperswithcode.com/method/bert"> here </a></p>
     </div>
 </p>
-
+      
 Initial tests on light datasets showed results of 65-70%, so we concluded that a heavy dataset would be capable of producing results up to 90%, however our personal machines lacked sufficient computing power to support the training of such a model on a large number of dataset entries such as ours. Despite this, we are confident that training with a larger dataset, would allow the algorithm to more accurately differentiate between various classifications of comments, and recognise linguistic elements such as sarcasm, slang, and cultural references.
 
 <center>
