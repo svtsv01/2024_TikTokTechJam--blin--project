@@ -80,3 +80,30 @@ We have also developed a web-site using basic web development stack, such as Nod
 
 ### Conclusion
 In the process of our research, we have successfully created a BERT model algorithm, with demonstrated capabilities to achieve an accuracy up to 70% in language and text classification. We have also developed a prototype of a website, that ideally, upon full functionality would be able to load videos from Tik-Toc and classify them in a similar manner without loss of accuracy.
+
+### References
+~~~bibtex
+
+@inproceedings{mathew2021hatexplain,
+  title={HateXplain: A Benchmark Dataset for Explainable Hate Speech Detection},
+  author={Mathew, Binny and Saha, Punyajoy and Yimam, Seid Muhie and Biemann, Chris and Goyal, Pawan and Mukherjee, Animesh},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={35},
+  number={17},
+  pages={14867--14875},
+  year={2021}
+},
+
+@inproceedings{hateoffensive,
+  title = {Automated Hate Speech Detection and the Problem of Offensive Language},
+  author = {Davidson, Thomas and Warmsley, Dana and Macy, Michael and Weber, Ingmar}, 
+  booktitle = {Proceedings of the 11th International AAAI Conference on Web and Social Media},
+  series = {ICWSM '17},
+  year = {2017},
+  location = {Montreal, Canada},
+  pages = {512-515}
+  },
+
+title = civil_comments
+website = https://www.tensorflow.org/datasets/catalog/civil_comments#civil_commentscivilcomments_default_config
+~~~
