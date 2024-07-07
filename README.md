@@ -1,4 +1,5 @@
 # NOTE: larger files, including datasets and model weights, are housed on [Google Drive](https://drive.google.com/drive/folders/14nzDT1nva1aNvQ5VoHZnZd-YZccn8ymx?usp=sharing)
+If you wish to test the model, upload your dataset, preprocessed to the required format, in the BERT_testing.ipynb file.
 
 # 2024_TikTokTechJam--blin--project
 This a repository housing the solution for 2024 Tik-Tok Tech Jam, on "Preventing hate speech". Teamname &lt;blin>
