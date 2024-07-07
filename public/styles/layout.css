@@ -188,14 +188,13 @@ label[for="link"] {
 }
 
 input {
-  width: 300px;
+  width: 35%;
   padding: 1px;
   font-size: 12px;
   border: 1.5px solid #000;
   border-radius: 0.5rem;
   box-shadow: 2.5px 3px 0 #000;
   outline: none;
-  transition: ease 0.25s;
   margin-bottom: 28px;
 }
 
@@ -215,6 +214,6 @@ input {
 }
 
 #BERT {
-  width: 100%;
+  width: 90%;
   height: auto;
 }

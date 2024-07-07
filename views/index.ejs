@@ -1,7 +1,7 @@
 <%- include("partials/header.ejs") %>
 
 <body>
-  <h2>Challenge</h2>
+  <h2> <strong>Challenge</strong></h2>
   <p class="text"> 
     The internet has connected people through platforms that enable information
     exchange. To prevent hate and offensive speech, most platforms have
@@ -16,7 +16,7 @@
     slang, and cultural references, complicates this task.
   </p>
 
-  <h2>Our Solution:</h2>
+  <h2> <strong> </strong>Our Solution:</h2>
 
   <form id="linkForm">
     <label for="link">Enter your link:</label>
@@ -26,18 +26,23 @@
   <div id="loadingMessage" class="loading">Loading...</div>
   <div id="normalMessage" class="normal">Normal (no hatespeech detected)</div>
 
-  <h3>Data Processing</h3>
+  <h3> <strong>Data Processing</strong> </h3>
   <p class="text">
-    Our team began by taking multiple initial data sets of comments with three varying classification criteria for comments of similar nature. 
-    The data sets were combined where data preparation and validation were performed to standardize all data entries into one form, 
-    removing any junk symbols or unsuitable entries to  leave a homogenous list of text comments. </br>
+
+    Our team began by taking multiple initial datasets of comments with three varying
+     classification criteria for comments of similar nature. The datasets were combined 
+     where data preparation and validation were performed to standardize all data entries 
+     into one form, removing any junk symbols or unsuitable entries to  leave a homogenous 
+     list of text comments.</br>
+
     <p>The sizes of light and heavy datasets</p> </p>
     <div class="image-container">
       <img src="images/output.png" alt="Image 4">
   </div>
     <p class="text">
-  </br>Each entry was manually labelled in a systematic manner, using numerical values to represent each category, where the number 0, 1 and 2 represented normal, offensive and hate speech respectively. 
-The research component consisted of using classical machine learning algorithms, for which we employed a light data set model consisting of 20 thousand entries. The production component centred around a deep learning algorithm using a heavy data set model of over 2 million entries.
+  </br>
+  Each entry was labelled in a systematic manner, using numerical values to represent each category,
+   where the number 0, 1 and 2 represented normal, offensive and hate speech respectively. 
 </br>
 </br>
 </p>
@@ -47,59 +52,65 @@ The research component consisted of using classical machine learning algorithms,
     <img src="images/Dist1.jpg" alt="Image 1">
     <img src="images/Dist2.jpg" alt="Image 2">
 </div>
-</body>
-<h3>Classical Machine Learning</h3>
+
+ <p class = "text">
+  The research component consisted of using classical machine learning algorithms, for which we employed a light dataset model consisting of 20 thousand entries.
+  The production component centred around a deep learning algorithm using a heavy dataset model of over 2 million entries.
+ </p>
+</br>
+<h3> <strong> Classical Machine Learning </strong></h3>
 
 <p class="text">
   To ascertain the best type of machine algorithm to utilise in production,
-   a light data set was used to train various learning models such 
-   as multilayer perceptron neural network, gradient booster classifier and support vector machine. 
-   The research was focused mainly on assessing the accuracy and f1 score of the models, 
-   however all models yielded unsatisfactory results with scores averaging around 50% across all models. 
-   It hence became evident that a more sophisticated algorithm, such as deep learning, 
-   was necessitated to attain the desired quality of results.
+  a light dataset was used to train various learning models such as multilayer perceptron neural network,
+  gradient booster classifier and support vector machine. The research was focused mainly on assessing 
+  the accuracy and f1 score of the models, however all models yielded unsatisfactory results with scores 
+  averaging around 50% across all models. 
+  It hence became evident that a more sophisticated algorithm, such as deep learning, 
+  was necessitated to attain the desired quality of results.
    <div class="image-container">
     <figure>
       <img src="images/MLP.png" style="width: 100%; height: auto;" alt="Image 5">
-      <figcaption>Multi-Layer Perceptron model schematic<br>
-        <span style="font-size: 10px;"> taken from <a href="https://www.researchgate.net/figure/MLP-classifier-neural-network-structure_fig7_358218876">here</a></span>
+      <figcaption>Multi-Layer Perceptron <span style="font-size: 1rem;"> - accuracy: 48%</span><br>
+        <span style="font-size: 1rem;"> picture taken from <a href="https://www.researchgate.net/figure/MLP-classifier-neural-network-structure_fig7_358218876">here</a></span>
       </figcaption>
     </figure>
     <figure>
-      <img id="BERT" src="images/MLP.png" alt="Image 5" style="width: 100%; height: auto;">
-      <figcaption>Multi-Layer Perceptron model schematic<br>
-        <span style="font-size: 10px;"> taken from <a href="https://www.researchgate.net/figure/MLP-classifier-neural-network-structure_fig7_358218876">here</a></span>
+      <img src="images/Tree.png" alt="Image 5" style="width: 75%; height: auto;">
+      <figcaption>Gradient Booster Classifier <span style="font-size: 1rem;"> - accuracy: 51%</span><br>
+        <span style="font-size: 1rem;">picture taken from <a href="https://www.researchgate.net/figure/Flow-diagram-of-gradient-boosting-machine-learning-method-The-ensemble-classifiers_fig1_351542039">here</a></span>
       </figcaption>
     </figure>
   </div>
   
   <figure>
-    <img id="BERT" src="images/MLP.png" alt="Image 5" style="width: 100%; height: auto;">
-    <figcaption>Multi-Layer Perceptron model schematic<br>
-      <span style="font-size: 10px;"> taken from <a href="https://www.researchgate.net/figure/MLP-classifier-neural-network-structure_fig7_358218876">here</a></span>
+    <img src="images/SVL.png" alt="Image 5" style="width: 25%; height: auto;">
+    <figcaption>Support vector machine <span style="font-size: 1rem;"> - accuracy: 49%</span><br>
+      <span style="font-size: 1rem;">picture taken from <a href="https://en.wikipedia.org/wiki/Support_vector_machine">here</a></span>
     </figcaption>
   </figure>
 
 </p>
 
-<h3>Deep Learning</h3>
+<h3> <strong>Deep Learning</strong></h3>
 
 <p class="text">
-  To implement the deep learning algorithm, a BERT model was selected because of it being a bidirectional model, 
-  which tends to capture more of the text’s context and meaning.
+  To implement the deep learning algorithm, a BERT model was selected because of it being a
+  bidirectional model, which tends to capture more of the text’s context and meaning. </p >
 
   <figure>
     <img id="BERT" src="images/BERT.png" alt="Image 5">
-    <figcaption>BERT model schematic </br>
-    <span style = "font-size: 10px;"> taken from  <a href = "https://paperswithcode.com/method/bert"> here </a></span></figcaption>
+    <figcaption>BERT <span style="font-size: 1rem;"> - accuracy: 65-70% </span> </br>
+    <span style = "font-size: 10px;">picture taken from  <a href = "https://paperswithcode.com/method/bert"> here </a></span></figcaption>
 </figure>
 
-</p> Initial tests on light data sets showed results of 65-70%, 
-  so we concluded that a heavy data set would be capable of producing results up to 90%, 
-  however our personal machines lacked sufficient computing power to support the training of such a model on a large number 
-  of data set entries such as ours. Despite this, we are confident that training with a larger data set, 
-  would allow the algorithm to more accurately differentiate between various classifications of comments, 
-  and recognise linguistic elements such as sarcasm, slang, and cultural references.
+<p class="text">
+  Initial tests on light datasets showed results of 65-70%, so we concluded that a heavy dataset would be capable of
+   producing results up to 90%, however our personal machines lacked sufficient computing power to
+    support the training of such a model on a large number of dataset entries such as ours. 
+    Despite this, we are confident that training with a larger dataset, would allow the algorithm to more accurately 
+    differentiate between various classifications of comments, and recognise linguistic elements such as sarcasm, slang, and cultural references.
+</p>
 
   <p>
     Here you can see the differences for accuracies between Classiacal and Deep Learning approaches:
@@ -110,10 +121,10 @@ The research component consisted of using classical machine learning algorithms,
 </div>
 </p>
 
-<h3>Conclusion</h3>
+<h3> <strong>Conclusion</strong></h3>
 <p class="text">
-  In the process of our research, we have successfully created a BERT model algorithm, with demonstrated capabilities to
-   achieve an accuracy up to 70% in language and text classification. </br>
+  In the process of our research, we have successfully created a BERT model algorithm, with demonstrated 
+  capabilities to achieve an accuracy up to 70% in language and text classification. </br>
     
 </br>We have also developed a prototype of a website, that ideally, upon full functionality would be able to load videos from Tik-Toc 
 and classify them in a similar manner without loss of accuracy.

@@ -5,6 +5,7 @@ body {
 }
 
 body {
+  font-size: 1.3rem !important; 
   display: flex;
   flex-direction: column;
   justify-content: stretch;
