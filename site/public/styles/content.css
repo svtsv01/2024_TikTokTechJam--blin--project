@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  font-size: 1.3rem !important; 
+  font-size: 1.3rem !important;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -39,6 +39,9 @@ p {
 }
 
 a:hover {
-  color: white;
+  color: blueviolet;
 }
 
+#logo:hover {
+  color: white;
+}
