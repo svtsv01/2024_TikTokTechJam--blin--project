@@ -16,7 +16,26 @@ Our goal is to create an AI-powered solution
     slang, and cultural references, complicates this task.
 
 ### Data Processing
-Our team began by taking multiple initial datasets of comments with three varying classification criteria for comments of similar nature. The datasets were combined where data preparation and validation were performed to standardize all data entries into one form, removing any junk symbols or unsuitable entries to  leave a homogenous list of text comments. Each entry was labelled in a systematic manner, using numerical values to represent each category, where the number 0, 1 and 2 represented normal, offensive and hate speech respectively. 
+Our team began by taking multiple initial datasets of comments with three varying classification criteria for comments of similar nature. The datasets were combined where data preparation and validation were performed to standardize all data entries into one form, removing any junk symbols or unsuitable entries to  leave a homogenous list of text comments.
+
+<center>
+    <div>
+    <img src="site/public/images/output.png" width="200" height="100"/>
+    </div>
+</center>
+
+Each entry was labelled in a systematic manner, using numerical values to represent each category, where the number 0, 1 and 2 represented normal, offensive and hate speech respectively. 
+
+<left>
+    <div>
+    <img src="site/public/images/Dist1.jpg" width="200" height="100"/>
+    </div>
+</left>
+<right>
+    <div>
+    <img src="site/public/images/Dist2.jpg" width="200" height="100"/>
+    </div>
+</right>
 
 The research component consisted of using classical machine learning algorithms, for which we employed a light dataset model consisting of 20 thousand entries. The production component centred around a deep learning algorithm using a heavy dataset model of over 2 million entries.
 
@@ -25,29 +44,37 @@ To ascertain the best type of machine algorithm to utilise in production, a ligh
 
 <left>
     <div>
-    <img src="https://www.researchgate.net/profile/Mohammed-Farhan-Baluch/publication/358218876/figure/fig7/AS:1184859200471042@1659503855657/MLP-classifier-neural-network-structure.png" width="200" height="100"/>
+    <img src="site/public/images/MLP.png" width="200" height="100"/>
     </div>
 </left>
 <center>
     <div>
-    <img src="https://www.researchgate.net/publication/351542039/figure/fig1/AS:11431281172877200@1688685833363/Flow-diagram-of-gradient-boosting-machine-learning-method-The-ensemble-classifiers.png" width="200" height="100"/>
+    <img src="site/public/images/Tree.png" width="200" height="100"/>
     </div>
 </center>
 <right>
     <div>
-    <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="200" height="100"/>
+    <img src="site/public/images/SVL.png" width="200" height="100"/>
     </div>
 </right>
 
 ### Deep Learning
-To implement the deep learning algorithm, a BERT model was selected because of it being a bidirectional model, which tends to capture more of the text’s context and meaning. Initial tests on light datasets showed results of 65-70%, so we concluded that a heavy dataset would be capable of producing results up to 90%, however our personal machines lacked sufficient computing power to support the training of such a model on a large number of dataset entries such as ours. Despite this, we are confident that training with a larger dataset, would allow the algorithm to more accurately differentiate between various classifications of comments, and recognise linguistic elements such as sarcasm, slang, and cultural references.
+To implement the deep learning algorithm, a BERT model was selected because of it being a bidirectional model, which tends to capture more of the text’s context and meaning. 
+
+<center>
+    <div>
+    <img src="site/public/images/BERT.png" width="200" height="100"/>
+    </div>
+</center>
+
+Initial tests on light datasets showed results of 65-70%, so we concluded that a heavy dataset would be capable of producing results up to 90%, however our personal machines lacked sufficient computing power to support the training of such a model on a large number of dataset entries such as ours. Despite this, we are confident that training with a larger dataset, would allow the algorithm to more accurately differentiate between various classifications of comments, and recognise linguistic elements such as sarcasm, slang, and cultural references.
 
 ### Website
 We have also developed a web-site using basic web development stack, such as Node.js, Express.js and EJS, which would be used to upload video files or comments to make prediction whether or not they contain hatespeech. You can access the website [here](), or by scanning the QR code:
 
 <center>
     <div>
-    <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="200" height="100"/>
+    <img src="site/public/images/Comp.png" width="200" height="100"/>
     </div>
 </center>
 
