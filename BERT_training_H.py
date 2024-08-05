@@ -15,20 +15,22 @@ train_text = pd.read_csv('train_text.tsv', sep='\t', names=['text'])['text']
 train_labels = pd.read_csv('train_labels.tsv', sep='\t', names=['label'])['label']
 val_text = pd.read_csv('val_text.tsv', sep='\t', names=['text'])['text']
 val_labels = pd.read_csv('val_labels.tsv', sep='\t', names=['label'])['label']
-test_text = pd.read_csv('test_text.tsv', sep='\t', names=['text'])['text']
-test_labels = pd.read_csv('test_labels.tsv', sep='\t', names=['label'])['label']
+#test_text = pd.read_csv('test_text.tsv', sep='\t', names=['text'])['text']
+#test_labels = pd.read_csv('test_labels.tsv', sep='\t', names=['label'])['label']
 
 # Load BERT model and tokenizer
 bert = AutoModel.from_pretrained('bert-base-uncased')
 tokenizer = BertTokenizerFast.from_pretrained('bert-base-uncased')
-device = torch.device("cpu")
+device = torch.device("cuda")
 
 # Tokenize and encode sequences
 print('tokenizing...')
 max_length = 128
 tokens_train = tokenizer.batch_encode_plus(train_text.tolist(), max_length=max_length, pad_to_max_length=True, truncation=True)
+print('train done')
 tokens_val = tokenizer.batch_encode_plus(val_text.tolist(), max_length=max_length, pad_to_max_length=True, truncation=True)
-tokens_test = tokenizer.batch_encode_plus(test_text.tolist(), max_length=max_length, pad_to_max_length=True, truncation=True)
+print('val done')
+#tokens_test = tokenizer.batch_encode_plus(test_text.tolist(), max_length=max_length, pad_to_max_length=True, truncation=True)
 print('finished tokenizing')
 
 # Convert lists to tensors
@@ -38,9 +40,9 @@ train_y = torch.tensor(train_labels.tolist())
 val_seq = torch.tensor(tokens_val['input_ids'])
 val_mask = torch.tensor(tokens_val['attention_mask'])
 val_y = torch.tensor(val_labels.tolist())
-test_seq = torch.tensor(tokens_test['input_ids'])
-test_mask = torch.tensor(tokens_test['attention_mask'])
-test_y = torch.tensor(test_labels.tolist())
+# test_seq = torch.tensor(tokens_test['input_ids'])
+# test_mask = torch.tensor(tokens_test['attention_mask'])
+# test_y = torch.tensor(test_labels.tolist())
 
 # Create dataloaders
 batch_size = 16
@@ -132,7 +134,7 @@ def evaluate():
 # Training and evaluation
 start = time.time()
 best_valid_loss = float('inf')
-epochs = 5
+epochs = 3
 train_losses, valid_losses = [], []
 
 for epoch in range(epochs):
@@ -151,10 +153,10 @@ stop = time.time()
 print(f'This took {stop-start} seconds')
 
 #Load best model and evaluate on test data
-model.load_state_dict(torch.load('saved_weights.pt'))
-with torch.no_grad():
-    preds = model(test_seq.to(device), test_mask.to(device))
-    preds = preds.detach().cpu().numpy()
+# model.load_state_dict(torch.load('saved_weights.pt'))
+# with torch.no_grad():
+#     preds = model(test_seq.to(device), test_mask.to(device))
+#     preds = preds.detach().cpu().numpy()
 
-preds = np.argmax(preds, axis=1)
-print(classification_report(test_y, preds))
+# preds = np.argmax(preds, axis=1)
+# print(classification_report(test_y, preds))
