@@ -115,6 +115,8 @@ preds = np.argmax(preds, axis=1)
 print(preds[0])
 
 #Remove the files
+video.close()
+wf.close()
 os.remove('output_audio.mp3')
 os.remove('output_audio.wav')
 os.remove('output_audio_mono.wav')
