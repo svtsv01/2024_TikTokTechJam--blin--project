@@ -18,13 +18,24 @@
 
   <h2> <strong> </strong>Our Solution:</h2>
 
-  <form id="linkForm">
-    <label for="link">Enter your link:</label>
+ 
+  <form action="/extract-text" method="POST">
+    <label for="link">Enter a link:</label>
     <input type="url" id="link" name="link" required>
     <button type="submit">Submit</button>
   </form>
-  <div id="loadingMessage" class="loading">Loading...</div>
-  <div id="normalMessage" class="normal">Normal (no hatespeech detected)</div>
+  
+  <% if (number) { %>
+    <% if (number === -1) { %>
+      <div id="errorMessage">Error: Please Try again</div>
+    <% } else if (number == 1) { %>
+      <div id="normalMessage">Normal (no hatespeech detected)</div>
+    <% } else if (number == 2) { %>
+      <div id="offMessage">Offensive (Might be offensive)</div>
+    <% } else if (number == 3) { %>
+      <div id="errorMessage">Hatespeech detected</div>
+    <% } %>
+  <% } %>
 
   <h3> <strong>Data Processing</strong> </h3>
   <p class="text">
@@ -139,18 +150,6 @@ and classify them in a similar manner without loss of accuracy.
   <li> <p class="text">  Hate and Offensive davidson dataset - available <a href = "https://github.com/t-davidson/hate-speech-and-offensive-language/tree/master">here</a>. </p></li>
 </ul>
 
-  <script>
-        document.getElementById('linkForm').addEventListener('submit', function(event) {
-            event.preventDefault(); 
-            document.getElementById('loadingMessage').style.display = 'block';
-            document.getElementById('normalMessage').style.display = 'none';
-
-            setTimeout(function() {
-                
-                document.getElementById('loadingMessage').style.display = 'none';
-                document.getElementById('normalMessage').style.display = 'block';
-            }, 1000);
-        });
-    </script>
+<script></script>
 
 <%- include("partials/footer.ejs") %>

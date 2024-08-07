@@ -141,9 +141,6 @@ p {
   text-align: justify;
 }
 
-.loading {
-  display: none;
-}
 .normal {
   display: none;
 }
@@ -156,6 +153,17 @@ p {
 #normalMessage {
   margin-bottom: 28px;
 }
+
+#offMessage {
+  color: orange;
+  margin-bottom: 28px;
+}
+
+#errorMessage {
+  color: red;
+  margin-bottom: 28px;
+}
+
 button {
   background: #76232f;
   border: 1px solid #76232f;
@@ -216,4 +224,9 @@ input {
 #BERT {
   width: 90%;
   height: auto;
+}
+
+#errorMessage {
+  color: red;
+  margin-bottom: 28px;
 }
